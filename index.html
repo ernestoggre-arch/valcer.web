@@ -20,12 +20,16 @@ header img{width:120px;}
 h2{border-left:5px solid var(--rojo);padding-left:10px;} 
 .grid{display:grid;grid-template-columns: repeat(auto-fit,minmax(250px,1fr));gap:20px;} 
 .card{background:white;padding:20px;border-radius:10px;box-shadow:0 5px 10px rgba(0,0,0,0.1);} 
-.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px;} 
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px;cursor:pointer;transition:0.3s;} 
+.gallery img:hover{transform:scale(1.05);} 
 video{width:100%;border-radius:10px;} 
 .stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px;} 
 .stat{flex:1;background:var(--rojo);color:white;padding:30px;border-radius:10px;text-align:center;font-size:22px;font-weight:700;} 
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:18px;border-radius:50%;} 
 footer{background:var(--negro);color:white;text-align:center;padding:20px;} 
+
+.lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;z-index:999;}
+.lightbox img{max-width:90%;max-height:90%;border-radius:10px;}
 </style>
 </head>
 
@@ -39,7 +43,7 @@ footer{background:var(--negro);color:white;text-align:center;padding:20px;}
 
 <section class="hero">
 <h1>Soluciones de Tercería de Calidad para la Industria Automotriz</h1>
-<p>Inspección, selección, retrabajo y muros de contención con respuesta inmediata en Puebla y Tlaxcala</p>
+<p>Especialistas en inspección, selección, retrabajo y muros de contención con respuesta inmediata en Puebla y Tlaxcala</p>
 <a href="https://wa.me/522471071143" class="btn">Solicitar servicio</a>
 </section>
 
@@ -55,11 +59,13 @@ footer{background:var(--negro);color:white;text-align:center;padding:20px;}
 </div>
 </div>
 
-<!-- HISTORIA -->
+<!-- HISTORIA ROBUSTA -->
 <div class="section">
 <h2>Historia</h2>
 <div class="card">
-<p>VALCER nace con el objetivo de ofrecer soluciones especializadas en tercería de calidad dentro del sector automotriz. Nuestra experiencia se ha enfocado en la inspección, contención y retrabajo de piezas, asegurando que nuestros clientes cumplan con estándares internacionales y mantengan la continuidad operativa.</p>
+<p>VALCER surge como respuesta a la creciente demanda de servicios especializados en control de calidad dentro de la industria automotriz. Desde nuestros inicios, nos hemos enfocado en ofrecer soluciones inmediatas, confiables y alineadas a estándares internacionales para garantizar la continuidad operativa de nuestros clientes.</p>
+<p>Con experiencia en campo, hemos participado en múltiples proyectos de inspección, contención y retrabajo, apoyando directamente en líneas de producción donde la calidad es crítica. Nuestro equipo ha sido capacitado bajo metodologías del sector automotriz, permitiéndonos adaptarnos a diferentes procesos y requerimientos técnicos.</p>
+<p>A lo largo del tiempo, VALCER se ha consolidado como un aliado estratégico para empresas que buscan reducir riesgos, evitar fugas de material no conforme y asegurar la satisfacción de sus clientes finales.</p>
 </div>
 </div>
 
@@ -67,47 +73,39 @@ footer{background:var(--negro);color:white;text-align:center;padding:20px;}
 <div class="section">
 <h2>Servicios Especializados</h2>
 <div class="grid">
-<div class="card"><strong>Inspección</strong><p>Evaluación visual y dimensional bajo estándares automotrices, garantizando cumplimiento de especificaciones.</p></div>
-<div class="card"><strong>Selección</strong><p>Clasificación de piezas conformes y no conformes, evitando riesgos en línea de producción.</p></div>
-<div class="card"><strong>Retrabajo</strong><p>Corrección de defectos para recuperación de material y reducción de scrap.</p></div>
-<div class="card"><strong>Muros de Contención</strong><p>Implementación inmediata para contener problemas de calidad en procesos críticos.</p></div>
-</div>
-</div>
-
-<!-- COMO AYUDAMOS -->
-<div class="section">
-<h2>¿Cómo te ayudamos?</h2>
-<div class="grid">
-<div class="card">Detectamos defectos antes de que lleguen al cliente final</div>
-<div class="card">Reducimos costos operativos y devoluciones</div>
-<div class="card">Aseguramos cumplimiento de estándares automotrices</div>
-</div>
-</div>
-
-<!-- MOMENTOS CLAVE -->
-<div class="section">
-<h2>Momentos clave para contratar</h2>
-<div class="grid">
-<div class="card">Arranque de producción (GP12)</div>
-<div class="card">Problemas de calidad</div>
-<div class="card">Auditorías</div>
-<div class="card">Contenciones urgentes</div>
-</div>
-</div>
-
-<!-- NORMAS -->
-<div class="section">
-<h2>Normas y Certificaciones</h2>
 <div class="card">
-<p>Trabajamos bajo estándares ISO 9001, asegurando procesos controlados y mejora continua. Contamos con registro REPSE y aplicamos trazabilidad total en cada inspección realizada.</p>
+<strong>Inspección de calidad</strong>
+<p>Realizamos inspección visual y dimensional bajo criterios definidos por el cliente, asegurando el cumplimiento de especificaciones técnicas en cada pieza evaluada.</p>
+</div>
+<div class="card">
+<strong>Selección de material</strong>
+<p>Clasificación detallada de piezas conformes y no conformes, evitando riesgos de ensamble o envío de producto defectuoso.</p>
+</div>
+<div class="card">
+<strong>Retrabajo</strong>
+<p>Corrección de defectos mediante procesos controlados, recuperando material y reduciendo pérdidas económicas.</p>
+</div>
+<div class="card">
+<strong>Muros de contención</strong>
+<p>Implementación inmediata de barreras de calidad para contener problemas críticos dentro de la línea de producción.</p>
+</div>
 </div>
 </div>
 
-<!-- POR QUE NOSOTROS -->
+<!-- PROCESO Y TRAZABILIDAD -->
 <div class="section">
-<h2>¿Por qué somos los mejores?</h2>
+<h2>Proceso y Trazabilidad</h2>
 <div class="card">
-<p>Ofrecemos respuesta inmediata regional, personal altamente capacitado, cumplimiento normativo, trazabilidad total y capacidad operativa para proyectos de alto volumen en la industria automotriz.</p>
+<p>En VALCER implementamos controles de trazabilidad en cada inspección realizada, permitiendo identificar el origen de cualquier desviación. Documentamos resultados, generamos reportes y aseguramos seguimiento continuo para garantizar transparencia y control total del proceso.</p>
+</div>
+</div>
+
+<!-- NORMATIVIDAD -->
+<div class="section">
+<h2>Normatividad y Cumplimiento</h2>
+<div class="card">
+<p>Todos nuestros procesos están basados en la norma ISO 9001 y en los lineamientos de la IATF 16949 automotriz, garantizando calidad, estandarización y mejora continua en cada operación.</p>
+<p>Además, contamos con registro vigente en el REPSE bajo el número de registro <strong>1003620</strong> y folio <strong>361283</strong>, cumpliendo con la regulación de servicios especializados en México.</p>
 </div>
 </div>
 
@@ -134,22 +132,17 @@ footer{background:var(--negro);color:white;text-align:center;padding:20px;}
 <h2>Contacto</h2>
 <div class="card">
 <p>📍 Priv. 20 de Noviembre 122, Santa Rosa, Apizaco, Tlaxcala, 90340</p>
-<p>📞 Oficina: 2411179532</p>
-<p>📩 valcersai2024@gmail.com</p>
-<br>
-<a href="https://wa.me/522471071143" class="btn">💬 WhatsApp</a>
-<a href="https://www.linkedin.com/company/valcer-saia/" class="btn">🔗 LinkedIn</a>
-<br><br>
-<form action="https://formspree.io/f/xjgalzzj" method="POST">
-<input type="text" name="name" placeholder="Nombre" required><br><br>
-<input type="email" name="email" placeholder="Correo" required><br><br>
-<textarea name="message" placeholder="Mensaje" required></textarea><br><br>
-<button type="submit" class="btn">Enviar</button>
-</form>
-</div>
+<p><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" width="16"> Oficina: 2411179532</p>
+<p><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" width="16"> valcersai2024@gmail.com</p>
+<a href="https://wa.me/522471071143" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="16"> WhatsApp</a>
+<a href="https://www.linkedin.com/company/valcer-saia/" class="btn">LinkedIn</a>
 </div>
 </div>
 
+</div>
+
+<div class="lightbox" id="lightbox">
+<img id="lightbox-img">
 </div>
 
 <a href="https://wa.me/522471071143" class="whatsapp">💬</a>
@@ -183,6 +176,21 @@ counters.forEach(counter => {
   }
  };
  update();
+});
+
+const images = document.querySelectorAll('.gallery img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+images.forEach(img => {
+ img.addEventListener('click', () => {
+  lightbox.style.display = 'flex';
+  lightboxImg.src = img.src;
+ });
+});
+
+lightbox.addEventListener('click', () => {
+ lightbox.style.display = 'none';
 });
 </script>
 
