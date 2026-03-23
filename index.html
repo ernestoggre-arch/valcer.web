@@ -3,41 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VALCER SAIA | Ingeniería en Calidad Automotriz</title>
-
-<meta name="description" content="Servicios de inspección, retrabajo y calidad automotriz en Puebla y Tlaxcala. Especialistas en IATF, ISO y Core Tools.">
-<meta name="keywords" content="calidad automotriz, inspección, retrabajo, GP12, IATF, Puebla, Tlaxcala">
-<meta name="author" content="VALCER SAIA">
-
+<title>VALCER - Tercería de Calidad</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <style>
-:root{
---rojo:#b71c1c;
---verde:#1b5e20;
---gris:#2b2f33;
---gris-claro:#f4f6f8;
-}
-body{font-family:'Poppins',sans-serif;margin:0;background:var(--gris-claro);color:#222;}
-header{background:var(--gris);color:white;padding:20px;text-align:center;border-bottom:4px solid var(--rojo);}
-header img{width:110px;}
-nav{background:#1f2327;padding:12px;text-align:center;position:sticky;top:0;}
-nav a{color:white;margin:0 10px;text-decoration:none;}
-.hero{background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0');background-size:cover;color:white;padding:100px 20px;text-align:center;}
-.hero h1{font-size:44px;}
-.btn{background:var(--rojo);color:white;padding:12px 20px;border-radius:5px;text-decoration:none;display:inline-block;margin-top:15px;}
-.container{max-width:1200px;margin:auto;padding:40px 20px;}
-.section{margin-bottom:60px;}
-h2{border-left:6px solid var(--verde);padding-left:10px;}
-.cards{display:flex;flex-wrap:wrap;gap:20px;}
-.card{flex:1;min-width:250px;background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-.highlight{background:#e8f5e9;border-left:6px solid var(--verde);padding:20px;}
-.process{background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-.stats{display:flex;gap:20px;flex-wrap:wrap;}
-.stat{flex:1;background:var(--rojo);color:white;padding:25px;border-radius:10px;text-align:center;}
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;text-decoration:none;}
-footer{background:var(--gris);color:#ccc;text-align:center;padding:20px;}
+:root{--rojo:#b71c1c;--negro:#111;--gris:#1f1f1f;--fondo:#f5f6f8;}
+body{font-family:'Poppins',sans-serif;margin:0;background:var(--fondo);} 
+header{background:var(--negro);color:white;text-align:center;padding:20px;} 
+header img{width:120px;} 
+.hero{background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc');background-size:cover;color:white;text-align:center;padding:120px 20px;} 
+.hero h1{font-size:42px;} 
+.btn{background:var(--rojo);color:white;padding:14px 25px;text-decoration:none;border-radius:5px;} 
+.container{max-width:1200px;margin:auto;padding:40px 20px;} 
+.section{margin-bottom:60px;opacity:0;transform:translateY(40px);transition:all 0.8s ease;} 
+.section.visible{opacity:1;transform:translateY(0);} 
+h2{border-left:5px solid var(--rojo);padding-left:10px;} 
+.grid{display:grid;grid-template-columns: repeat(auto-fit,minmax(250px,1fr));gap:20px;} 
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 5px 10px rgba(0,0,0,0.1);} 
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px;} 
+video{width:100%;border-radius:10px;} 
+.stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px;} 
+.stat{flex:1;background:var(--rojo);color:white;padding:30px;border-radius:10px;text-align:center;font-size:22px;font-weight:700;} 
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:18px;border-radius:50%;} 
+footer{background:var(--negro);color:white;text-align:center;padding:20px;} 
 </style>
 </head>
 
@@ -45,110 +33,152 @@ footer{background:var(--gris);color:#ccc;text-align:center;padding:20px;}
 
 <header>
 <img src="logo.png">
-<h1>VALCER SAIA</h1>
-<p>Ingeniería en Calidad y Servicios de Tercerización Automotriz</p>
+<h1>VALCER</h1>
+<p>Tercería de Calidad Automotriz</p>
 </header>
 
-<nav>
-<a href="#historia">Historia</a>
-<a href="#servicios">Servicios</a>
-<a href="#tecnologia">Metodología</a>
-<a href="#normas">Normas</a>
-<a href="#certificaciones">Certificaciones</a>
-<a href="#ventajas">Ventajas</a>
-<a href="#contacto">Contacto</a>
-</nav>
-
-<section class="hero" data-aos="fade-up">
-<h1>Proveedor Estratégico en Calidad Automotriz</h1>
-<p>Reducimos defectos, aseguramos calidad y respondemos en menos de 24 horas en Puebla y Tlaxcala</p>
-<a href="#contacto" class="btn">Solicitar Cotización</a>
+<section class="hero">
+<h1>Soluciones de Tercería de Calidad para la Industria Automotriz</h1>
+<p>Inspección, selección, retrabajo y muros de contención con respuesta inmediata en Puebla y Tlaxcala</p>
+<a href="https://wa.me/522471071143" class="btn">Solicitar servicio</a>
 </section>
 
 <div class="container">
 
-<div id="historia" class="section" data-aos="fade-up">
+<!-- CONTADORES -->
+<div class="section">
+<h2>Resultados que nos respaldan</h2>
+<div class="stats">
+<div class="stat"><span class="counter" data-target="50000">0</span>+ piezas inspeccionadas</div>
+<div class="stat"><span class="counter" data-target="200">0</span>+ proyectos ejecutados</div>
+<div class="stat"><span class="counter" data-target="100">0</span>% satisfacción</div>
+</div>
+</div>
+
+<!-- HISTORIA -->
+<div class="section">
 <h2>Historia</h2>
-<p>Fundada en 2017, VALCER SAIA se especializa en servicios de calidad y procesos industriales, consolidándose en el sector automotriz en 2023.</p>
-</div>
-
-<div id="servicios" class="section" data-aos="fade-up">
-<h2>Servicios</h2>
-<div class="cards">
-<div class="card">Inspección visual y dimensional</div>
-<div class="card">Contención GP12 y CSL</div>
-<div class="card">Retrabajo técnico</div>
-<div class="card">Personal especializado</div>
+<div class="card">
+<p>VALCER nace con el objetivo de ofrecer soluciones especializadas en tercería de calidad dentro del sector automotriz. Nuestra experiencia se ha enfocado en la inspección, contención y retrabajo de piezas, asegurando que nuestros clientes cumplan con estándares internacionales y mantengan la continuidad operativa.</p>
 </div>
 </div>
 
-<div id="tecnologia" class="section" data-aos="fade-up">
-<h2>Metodología</h2>
-<div class="process">
-<ul>
-<li>APQP, PPAP, FMEA</li>
-<li>SPC y MSA</li>
-<li>Reportes técnicos</li>
-</ul>
+<!-- SERVICIOS DETALLADOS -->
+<div class="section">
+<h2>Servicios Especializados</h2>
+<div class="grid">
+<div class="card"><strong>Inspección</strong><p>Evaluación visual y dimensional bajo estándares automotrices, garantizando cumplimiento de especificaciones.</p></div>
+<div class="card"><strong>Selección</strong><p>Clasificación de piezas conformes y no conformes, evitando riesgos en línea de producción.</p></div>
+<div class="card"><strong>Retrabajo</strong><p>Corrección de defectos para recuperación de material y reducción de scrap.</p></div>
+<div class="card"><strong>Muros de Contención</strong><p>Implementación inmediata para contener problemas de calidad en procesos críticos.</p></div>
 </div>
 </div>
 
-<div id="normas" class="section" data-aos="fade-up">
-<h2>Normas</h2>
-<div class="highlight">
-ISO 9001:2015<br>
-IATF 16949<br>
-Core Tools<br>
-Cero defectos
+<!-- COMO AYUDAMOS -->
+<div class="section">
+<h2>¿Cómo te ayudamos?</h2>
+<div class="grid">
+<div class="card">Detectamos defectos antes de que lleguen al cliente final</div>
+<div class="card">Reducimos costos operativos y devoluciones</div>
+<div class="card">Aseguramos cumplimiento de estándares automotrices</div>
 </div>
 </div>
 
-<div id="certificaciones" class="section" data-aos="fade-up">
-<h2>Certificaciones</h2>
-<div class="highlight">
-REPSE<br>
-Seguridad Industrial (ISP)<br>
-Cumplimiento legal
+<!-- MOMENTOS CLAVE -->
+<div class="section">
+<h2>Momentos clave para contratar</h2>
+<div class="grid">
+<div class="card">Arranque de producción (GP12)</div>
+<div class="card">Problemas de calidad</div>
+<div class="card">Auditorías</div>
+<div class="card">Contenciones urgentes</div>
 </div>
 </div>
 
-<div id="ventajas" class="section" data-aos="fade-up">
-<h2>Ventajas</h2>
-<div class="cards">
-<div class="card">Respuesta inmediata</div>
-<div class="card">Cobertura Puebla y Tlaxcala</div>
-<div class="card">Alta especialización</div>
+<!-- NORMAS -->
+<div class="section">
+<h2>Normas y Certificaciones</h2>
+<div class="card">
+<p>Trabajamos bajo estándares ISO 9001, asegurando procesos controlados y mejora continua. Contamos con registro REPSE y aplicamos trazabilidad total en cada inspección realizada.</p>
 </div>
 </div>
 
-<div id="contacto" class="section" data-aos="fade-up">
+<!-- POR QUE NOSOTROS -->
+<div class="section">
+<h2>¿Por qué somos los mejores?</h2>
+<div class="card">
+<p>Ofrecemos respuesta inmediata regional, personal altamente capacitado, cumplimiento normativo, trazabilidad total y capacidad operativa para proyectos de alto volumen en la industria automotriz.</p>
+</div>
+</div>
+
+<!-- GALERIA -->
+<div class="section">
+<h2>Galería</h2>
+<div class="grid gallery">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+<img src="foto6.jpg">
+<img src="foto7.jpg">
+</div>
+<br>
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- CONTACTO -->
+<div class="section">
 <h2>Contacto</h2>
-
-<form action="https://formspree.io/f/xjgalzzj" method="POST">
-<input type="text" placeholder="Nombre" required>
-<input type="email" placeholder="Correo" required>
-<textarea placeholder="Mensaje" required></textarea>
-<button class="btn">Enviar</button>
-</form>
-
-<a class="btn" href="https://wa.me/5212471071143">WhatsApp</a>
-<a class="btn" href="https://www.linkedin.com/company/valcer-saia/?viewAsMember=true">LinkedIn</a>
-
-<p>📍 Puebla y Tlaxcala, México</p>
+<div class="card">
 <p>📩 valcersai2024@gmail.com</p>
-
+<a href="https://wa.me/522471071143" class="btn">WhatsApp</a>
+<form action="https://formspree.io/f/xjgalzzj" method="POST">
+<input type="text" name="name" placeholder="Nombre" required><br><br>
+<input type="email" name="email" placeholder="Correo" required><br><br>
+<textarea name="message" placeholder="Mensaje" required></textarea><br><br>
+<button type="submit" class="btn">Enviar</button>
+</form>
+</div>
 </div>
 
 </div>
 
-<a href="https://wa.me/5212471071143" class="whatsapp-float">💬</a>
+<a href="https://wa.me/522471071143" class="whatsapp">💬</a>
 
 <footer>
-<p>© 2026 VALCER SAIA</p>
+<p>© 2026 VALCER</p>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+<script>
+const sections = document.querySelectorAll('.section');
+window.addEventListener('scroll', () => {
+ sections.forEach(sec => {
+  const top = sec.getBoundingClientRect().top;
+  if(top < window.innerHeight - 100){
+   sec.classList.add('visible');
+  }
+ });
+});
+
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+ const update = () => {
+  const target = +counter.getAttribute('data-target');
+  const count = +counter.innerText;
+  const increment = target / 100;
+  if(count < target){
+   counter.innerText = Math.ceil(count + increment);
+   setTimeout(update, 20);
+  } else {
+   counter.innerText = target;
+  }
+ };
+ update();
+});
+</script>
 
 </body>
 </html>
